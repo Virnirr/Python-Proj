@@ -1,7 +1,6 @@
-from PIL import Image, ImageFilter
+from PIL import Image
 import sys 
 import os
-import shutil
  
 # grab the first and second argument 
 path = sys.argv[1]
