@@ -2,7 +2,7 @@ import PyPDF2
 
 # open as read + binary (rb) mode since python reads binary for files
 # convert the file object to binary mode so that the PyPDF2 reads the binary object
-with open('./pdfs/dummy.pdf', "rb") as file:
+with open('./dummy.pdf', "rb") as file:
     # allows us to read pdf files using the method PdfFileReader()
     reader = PyPDF2.PdfFileReader(file) 
     print(reader.numPages) # method tells us the number of pages in the pdf
