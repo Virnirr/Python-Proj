@@ -1,3 +1,3 @@
 ## Python Projects and Algorithms
 
-Simply Python Project and Algorithms
+Simple Python Project and Algorithms
