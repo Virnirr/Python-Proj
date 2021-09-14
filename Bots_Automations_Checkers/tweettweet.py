@@ -2,8 +2,8 @@ import tweepy
 import time
 # what twitter API uses to verify our account
 # verify the twitter API using API key and secret
-auth = tweepy.OAuthHandler('wi7Y1V9mXc8mmQQYT7BEtTKOD', 'oE18iB7c4riiVkkEUKRhXYO1nOxhbqQgsHqRFhVGDyxwohyIAs')
-auth.set_access_token('1240656412818071552-HSelGLeEdO1y94w05Ol6kJSyBQUa48', 'pWzYFqe2Fu8cU0a8YLKHxyKEFsSSvQhwFDL0Wxgx83alf')
+auth = tweepy.OAuthHandler('os.environ.get("API_KEY")', 'os.environ.get("API_KEY_SECRET")')
+auth.set_access_token('os.environ.get("ACCESS_TOKEN")', 'os.environ.get("ACCESS_TOKEN_SECRET")')
 
 # using tweepy.API to authenticate and have access to the API
 api = tweepy.API(auth)
