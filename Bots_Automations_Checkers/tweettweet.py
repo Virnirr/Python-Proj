@@ -25,7 +25,7 @@ def limit_handler(cursor):
         return
 
 # print all of my followers
-# .Cursor is a twitter that loops through the iterations and would return RateLimitError when it reaches a certain amount of request too fast
+# .Cursor is a twitter generator that loops through the iterations and would return RateLimitError when it reaches a certain amount of request too fast
 for follower in limit_handler(tweepy.Cursor(api.followers).items()):
     print(follower.name) # print all my followers
     break
