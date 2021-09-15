@@ -6,6 +6,7 @@ auth = tweepy.OAuthHandler('os.environ.get("API_KEY")', 'os.environ.get("API_KEY
 auth.set_access_token('os.environ.get("ACCESS_TOKEN")', 'os.environ.get("ACCESS_TOKEN_SECRET")')
 
 # using tweepy.API to authenticate and have access to the API
+# creates an api object of tweepy for authentication
 api = tweepy.API(auth)
 
 # give informations about me
