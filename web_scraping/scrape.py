@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup # creates a BeautifulSoup object that allows us to parse through html
 import pprint # prints pretty strings
 
 # requests the url/website Do a get request to grab that url
