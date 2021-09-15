@@ -1,10 +1,10 @@
 import requests
-from bs4 import BeautifulSoup # creates a BeautifulSoup object that allows us to parse through html
+from bs4 import BeautifulSoup # creates a BeautifulSoup object that allows us to parse through html and convert into useable format
 import pprint # prints pretty strings
 
-# requests the url/website Do a get request to grab that url
-res = requests.get('https://news.ycombinator.com/')
-res2 = requests.get('https://news.ycombinator.com/news?p=2')
+# requests the url/website Do a get request to grab that url and the contents inside it 
+res = requests.get('https://news.ycombinator.com/') # link 1 page 1
+res2 = requests.get('https://news.ycombinator.com/news?p=2') # link 2 page 2
 
 
 # tells BeautifulSoup parses to parse the html so converting from string to object
