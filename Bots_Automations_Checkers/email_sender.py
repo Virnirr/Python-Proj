@@ -22,6 +22,6 @@ with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     # tls is an encrption system to connect securely to the server
     smtp.starttls()
     #login with email and password
-    smtp.login('interaculant@gmail.com', 'Interact12345')
+    smtp.login('os.etenviron(EMAIL)', 'os.getenviron(EMAIL_PASSWORD')
     #send email
     smtp.send_message(email)
